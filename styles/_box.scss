@@ -3,4 +3,19 @@
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(#C4C8D0, 0.4);
   padding: 15px 30px;
+
+  &__heading {
+    @include heading;
+    margin: 0;
+  }
+
+  &__header {
+    border-bottom: 3px solid var(--container-border-color);
+    padding-bottom: 13px;
+  }
+
+  &__footer {
+    border-top: 2px solid var(--container-border-color);
+    padding-top: 13px;
+  }
 }

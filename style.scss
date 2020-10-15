@@ -1,3 +1,6 @@
+@import "styles/mixins";
+
+@import "styles/typo";
 @import "styles/layout";
 @import "styles/box";
 @import "styles/utils";
@@ -5,15 +8,14 @@
 
 :root {
     --primary-color: #EAF2FF;
+
     --container-bg-color: #fff;
+    --container-border-color: #EBF2F7;
     --offset: 30px;
 }
 
 .icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #ccc;
+    font-size: 26px;
 }
 
 .badge {
@@ -25,4 +27,24 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.box-scroll {
+    display: grid;
+    grid-template-areas: "box__header" "box__body" "box__footer";
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+
+    &__header {
+        grid-area: box__header;
+    }
+
+    &__body {
+        grid-area: box__body;
+        overflow-y: auto;
+    }
+
+    &__footer {
+        grid-area: box__footer;
+    }
 }

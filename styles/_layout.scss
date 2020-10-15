@@ -1,6 +1,7 @@
 .general {
   height: 100vh;
   background: var(--primary-color);
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: 0.25fr 0.75fr;

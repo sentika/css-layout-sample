@@ -11,49 +11,67 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
 </head>
 <body class="general">
-    <div class="box navmenu general__navmenu">
-        <nav class="menu">
+    <div class="box box-scroll navmenu general__navmenu">
+        <div class="navmenu__header box-scroll__header box__header">header</div>
+
+        <nav class="navmenu__body box-scroll__body menu">
             <ul class="menu__list">
                 <li class="menu__item">
                     <a class="menu-link" href="">
-                        <i class="menu-link__before icon"></i>
+                        <i class="menu-link__before icon icon-analytics"></i>
                         <span class="menu-link__text">Dashboard</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu-link menu-link--active" href="">
-                        <i class="menu-link__before icon"></i>
+                        <i class="menu-link__before icon icon-analytics"></i>
                         <span class="menu-link__text">Tradeview</span>
                         <span class="menu-link__after badge">12</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu-link" href="">
-                        <i class="menu-link__before icon"></i>
+                        <i class="menu-link__before icon icon-analytics"></i>
                         <span class="menu-link__text">Dashboard</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu-link" href="">
-                        <i class="menu-link__before icon"></i>
+                        <i class="menu-link__before icon icon-analytics"></i>
                         <span class="menu-link__text">Dashboard</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu-link" href="">
-                        <i class="menu-link__before icon"></i>
+                        <i class="menu-link__before icon icon-analytics"></i>
                         <span class="menu-link__text">Dashboard</span>
                     </a>
                 </li>
             </ul>
         </nav>
+
+        <div class="navmenu__footer box-scroll__footer box__footer">
+            <a class="menu-link" href="">
+                <i class="menu-link__before icon icon-analytics"></i>
+                <span class="menu-link__text">Logout</span>
+            </a>
+        </div>
     </div>
     <div class="main general__main">
         <div class="content main__content">
-            <div class="box content__row content__row--size-l">content row</div>
-            <div class="box content__row">content row</div>
+            <div class="box content__row content__row--size-l">
+                <div class="box__header">
+                    <h2 class="box__heading">content row</h2>
+                </div>
+            </div>
+            <div class="box content__row">
+                <div class="box__header">
+                    <h2 class="box__heading">content row</h2>
+                </div>
+            </div>
         </div>
         <div class="box sidebar main__sidebar">sidebar</div>
     </div>
