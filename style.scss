@@ -1,0 +1,28 @@
+@import "styles/layout";
+@import "styles/box";
+@import "styles/utils";
+@import "styles/menu";
+
+:root {
+    --primary-color: #EAF2FF;
+    --container-bg-color: #fff;
+    --offset: 30px;
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+}
+
+.badge {
+    display: inline-flex;
+    min-width: 30px;
+    min-height: 30px;
+    background: #52575D;
+    color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
