@@ -48,3 +48,42 @@
         grid-area: box__footer;
     }
 }
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    position: relative;
+
+    &__image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    &__status {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+}
+
+.user-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1BC167;
+}
+
+.message {
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.message-header {
+    &--from {
+        flex-direction: row-reverse;
+    }
+}

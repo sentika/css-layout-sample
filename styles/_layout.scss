@@ -26,15 +26,20 @@
 
 .main {
   grid-auto-flow: column;
-  gap: var(--offset);
+  //gap: var(--offset);
+  overflow: hidden;
 
   &__content {
     grid-column: span 2;
   }
+
+  &--chat {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .sidebar {
-  background: #eee;
+  //background: #eee;
 }
 
 .content {
@@ -42,7 +47,7 @@
   gap: var(--offset);
 
   &__row {
-    background: #ddd;
+    //background: #ddd;
   }
 }
 
